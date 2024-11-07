@@ -1,7 +1,11 @@
 {
-  "name": "my-app",
+  "name": "atg-react-typescript",
   "version": "0.1.0",
   "private": true,
+  "description": "Atg horse race",
+  "repository": "git@github-perso:jbblt/atg-react-typescript.git",
+  "author": "Jean-baptiste Balmont <jbbalmont@o2commerce.com>",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -19,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "npx eslint '**/*.{ts,tsx}'",
+    "lint-fix": "npx eslint '**/*.{ts,tsx}' --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +45,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.13.0"
   }
 }
