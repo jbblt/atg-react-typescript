@@ -2,7 +2,7 @@
   "name": "atg-react-typescript",
   "version": "0.1.0",
   "private": true,
-  "description": "Atg horse race",
+  "description": "Atg horse racing",
   "repository": "git@github-perso:jbblt/atg-react-typescript.git",
   "author": "Jean-baptiste Balmont <jbbalmont@o2commerce.com>",
   "license": "MIT",
