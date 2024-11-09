@@ -1,24 +1,40 @@
-import logo from "./logo.svg";
+import { Container } from "@mui/material";
+import Box from "@mui/material/Box";
+
 import "./App.css";
+import { Footer } from "./components/footer/Footer";
+import { NavBar } from "./components/navbar/NavBar";
+import { RacesPage } from "./pages/RacesPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Box
+      sx={{
+        background: "background.default",
+      }}
+    >
+      <header>
+        <NavBar />
       </header>
-    </div>
+
+      <Box
+        sx={{
+          boxSizing: "border-box",
+          minHeight: "100vh",
+          paddingBottom: "30rem",
+        }}
+      >
+        <Container maxWidth="sm">
+          <Box sx={{ my: 4 }}>
+            <RacesPage />
+          </Box>
+        </Container>
+      </Box>
+
+      <footer>
+        <Footer />
+      </footer>
+    </Box>
   );
 }
 
