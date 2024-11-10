@@ -4,18 +4,28 @@ import { StrictMode } from "react";
 import "./index.css";
 
 import ReactDOM from "react-dom/client";
+import { QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 import App from "./App";
+import { BetTypeProvider } from "./context/betType/BetTypeContext";
 import reportWebVitals from "./reportWebVitals";
+import { queryClient } from "./services/queryClient";
 import { theme } from "./theme/theme";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
+
 root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <QueryClientProvider client={queryClient}>
+        <BetTypeProvider>
+          <App />
+        </BetTypeProvider>
+        <ReactQueryDevtools />
+      </QueryClientProvider>
     </ThemeProvider>
   </StrictMode>,
 );
