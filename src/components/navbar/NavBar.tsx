@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 
 export const NavBar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ maxWidth: "100vw", overflow: "hidden" }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -16,11 +16,10 @@ export const NavBar = () => {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="span" sx={{ flexGrow: 1 }}>
             ATG Horse Racing
           </Typography>
           {/*Todo: Manage global Api context to display the selected Race or use a button to select a race pallalely to input Select*/}

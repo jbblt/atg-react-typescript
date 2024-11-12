@@ -8,7 +8,7 @@ import { QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
 import App from "./App";
-import { BetTypeProvider } from "./context/betType/BetTypeContext";
+import { AtgProvider } from "./context/atgType/atgContext";
 import reportWebVitals from "./reportWebVitals";
 import { queryClient } from "./services/queryClient";
 import { theme } from "./theme/theme";
@@ -21,9 +21,9 @@ root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <QueryClientProvider client={queryClient}>
-        <BetTypeProvider>
+        <AtgProvider>
           <App />
-        </BetTypeProvider>
+        </AtgProvider>
         <ReactQueryDevtools />
       </QueryClientProvider>
     </ThemeProvider>

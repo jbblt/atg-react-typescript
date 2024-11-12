@@ -4,13 +4,17 @@ export interface Horse {
   name: string;
 }
 
-export interface Start {
+export interface Start extends ID {
   number: number;
   horse: Horse;
+  driver: { firstName: string; lastName: string };
 }
 
 export interface Race extends ID {
   starts: Start[];
+  name: string;
+  startTime: string;
+  number: number;
 }
 
 export interface Favorite {

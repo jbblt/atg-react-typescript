@@ -1,4 +1,17 @@
 html {
   font-size: 62.5%;
-  font-family: "Roboto-regular", arial, sans-serif
+  font-family: "Roboto-regular", arial, sans-serif;
+}
+.root,
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+ /*Remove Safari scroll bar*/
+body::-webkit-scrollbar {
+  display: none;
 }

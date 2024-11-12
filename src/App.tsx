@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import Box from "@mui/material/Box";
 
 import "./App.css";
@@ -10,7 +9,8 @@ function App() {
   return (
     <Box
       sx={{
-        background: "background.default",
+        width: "100vw",
+        backgroundColor: "background.default",
       }}
     >
       <header>
@@ -19,16 +19,16 @@ function App() {
 
       <Box
         sx={{
+          paddingX: "2rem",
           boxSizing: "border-box",
           minHeight: "100vh",
           paddingBottom: "30rem",
+          paddingTop: "2rem",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <Container maxWidth="sm">
-          <Box sx={{ my: 4 }}>
-            <RacesPage />
-          </Box>
-        </Container>
+        <RacesPage />
       </Box>
 
       <footer>
