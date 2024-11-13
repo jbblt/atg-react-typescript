@@ -30,7 +30,7 @@ export const Footer = () => {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          color: "text.primary",
+          color: "primary.contrastText",
           fontSize: "1.3rem",
         }}
       >
