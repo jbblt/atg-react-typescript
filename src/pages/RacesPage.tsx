@@ -36,6 +36,7 @@ export const RacesPage = () => {
         data?.results &&
         data.results.map((result) => (
           <Box
+            data-cy="result-tracks-header"
             key={result.id}
             onClick={() => setSelectedGameId && setSelectedGameId(result.id)}
           >
